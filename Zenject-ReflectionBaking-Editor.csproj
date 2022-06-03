@@ -41,15 +41,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Common\CecilExtensions.cs" />
      <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Common\ReflectionBakingModuleEditor.cs" />
-     <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Unity\ReflectionBakingBuildObserver.cs" />
+     <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Unity\ReflectionBakingMenuItems.cs" />
      <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Unity\ReflectionBakingInternalUtil.cs" />
-     <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Unity\ZenjectReflectionBakingSettings.cs" />
      <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Unity\AssemblyPathRegistry.cs" />
      <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Unity\UnityAssemblyResolver.cs" />
-     <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Unity\ReflectionBakingMenuItems.cs" />
      <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Unity\ZenjectReflectionBakingSettingsEditor.cs" />
+     <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Common\CecilExtensions.cs" />
+     <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Unity\ReflectionBakingBuildObserver.cs" />
+     <Compile Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Unity\ZenjectReflectionBakingSettings.cs" />
      <None Include="Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Zenject-ReflectionBaking-Editor.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>N:\programms\ForProgramming\2020.1.0f1\2021.3.1f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -303,8 +303,14 @@
      <Reference Include="UnityEditor.WindowsStandalone.Extensions">
      <HintPath>N:\programms\ForProgramming\2020.1.0f1\2021.3.1f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
+     <Reference Include="Zenject-usage">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
+     </Reference>
      <Reference Include="log4netPlastic">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+     </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
@@ -315,29 +321,23 @@
      <Reference Include="Unity.Analytics.Editor">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Analytics.Tracker">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject-usage">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
-     </Reference>
      <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Rocks">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Analytics.Tracker">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

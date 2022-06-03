@@ -41,20 +41,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\Zenject\Source\Editor\EditorStaticInstaller.cs" />
-     <Compile Include="Assets\Plugins\Zenject\Source\Editor\UnityInspectorListEditor.cs" />
-     <Compile Include="Assets\Plugins\Zenject\Source\Editor\EditorWindow\ZenjectEditorWindow.cs" />
+     <Compile Include="Assets\Plugins\Zenject\Source\Editor\SceneParentLoading\SceneParentAutomaticLoader.cs" />
+     <Compile Include="Assets\Plugins\Zenject\Source\Editor\ZenUnityEditorUtil.cs" />
      <Compile Include="Assets\Plugins\Zenject\Source\Editor\Editors\GameObjectContextEditor.cs" />
      <Compile Include="Assets\Plugins\Zenject\Source\Editor\Editors\RunnableContextEditor.cs" />
-     <Compile Include="Assets\Plugins\Zenject\Source\Editor\Editors\SceneContextEditor.cs" />
-     <Compile Include="Assets\Plugins\Zenject\Source\Editor\Editors\ContextEditor.cs" />
      <Compile Include="Assets\Plugins\Zenject\Source\Editor\ZenMenuItems.cs" />
-     <Compile Include="Assets\Plugins\Zenject\Source\Editor\ZenUnityEditorUtil.cs" />
-     <Compile Include="Assets\Plugins\Zenject\Source\Editor\SceneParentLoading\SceneParentAutomaticLoader.cs" />
      <Compile Include="Assets\Plugins\Zenject\Source\Editor\Editors\ProjectContextEditor.cs" />
      <Compile Include="Assets\Plugins\Zenject\Source\Editor\SceneParentLoading\DefaultSceneContractConfig.cs" />
      <Compile Include="Assets\Plugins\Zenject\Source\Editor\Editors\SceneDecoratorContextEditor.cs" />
      <Compile Include="Assets\Plugins\Zenject\Source\Editor\ObjectGraphVisualizer.cs" />
+     <Compile Include="Assets\Plugins\Zenject\Source\Editor\EditorStaticInstaller.cs" />
+     <Compile Include="Assets\Plugins\Zenject\Source\Editor\UnityInspectorListEditor.cs" />
+     <Compile Include="Assets\Plugins\Zenject\Source\Editor\EditorWindow\ZenjectEditorWindow.cs" />
+     <Compile Include="Assets\Plugins\Zenject\Source\Editor\Editors\SceneContextEditor.cs" />
+     <Compile Include="Assets\Plugins\Zenject\Source\Editor\Editors\ContextEditor.cs" />
      <None Include="Assets\Plugins\Zenject\Source\Editor\Zenject-Editor.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>N:\programms\ForProgramming\2020.1.0f1\2021.3.1f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -308,8 +308,14 @@
      <Reference Include="UnityEditor.WindowsStandalone.Extensions">
      <HintPath>N:\programms\ForProgramming\2020.1.0f1\2021.3.1f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
+     <Reference Include="Zenject-usage">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
+     </Reference>
      <Reference Include="log4netPlastic">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+     </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
@@ -320,29 +326,23 @@
      <Reference Include="Unity.Analytics.Editor">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Analytics.Tracker">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject-usage">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
-     </Reference>
      <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Rocks">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Analytics.Tracker">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

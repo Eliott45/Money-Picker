@@ -41,12 +41,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Infrastructure\BootstrapInstaller.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\CoinPicker.cs" />
      <Compile Include="Assets\Scripts\Coin.cs" />
-     <Compile Include="Assets\Scripts\AppleTree.cs" />
+     <Compile Include="Assets\Scripts\MoneyBag.cs" />
      <Compile Include="Assets\Scripts\Basket.cs" />
      <Compile Include="Assets\Scripts\HighScore.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\LocationInstaller.cs" />
      <None Include="Assets\Resources\BillingMode.json" />
      <Reference Include="UnityEngine">
      <HintPath>N:\programms\ForProgramming\2020.1.0f1\2021.3.1f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -291,20 +293,17 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>N:\programms\ForProgramming\2020.1.0f1\2021.3.1f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Analytics.StandardEvents">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Analytics.Editor">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Analytics.Tracker">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
-     </Reference>
      <Reference Include="Zenject-usage">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
      </Reference>
      <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Analytics.StandardEvents">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Analytics.Editor">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
@@ -314,6 +313,9 @@
      </Reference>
      <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Analytics.Tracker">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>N:\programms\ForProgramming\2020.1.0f1\2021.3.1f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -729,11 +731,11 @@
      <Reference Include="UnityEngine.SpatialTracking">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEngine.UI">
-     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Analytics.DataPrivacy">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UI">
+     <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Purchasing.SecurityCore">
      <HintPath>N:\Eliott_Alderson\study\ZenjectRefactor\Money-Picker\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>

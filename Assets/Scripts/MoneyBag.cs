@@ -3,7 +3,7 @@
 public class MoneyBag : MonoBehaviour
 {
     [Header("Set In Inspector")]
-    [SerializeField] private GameObject _applePrefab;
+    [SerializeField] private GameObject _coinPrefab;
     [SerializeField] private float _speed = 1f; 
     [SerializeField] private float _changeDistance = 10f; 
     [SerializeField] private float _chanceToChangeDirections = .1f; 
@@ -25,9 +25,9 @@ public class MoneyBag : MonoBehaviour
     
     private void DropCoin()
     {
-        Instantiate(_applePrefab, transform.position, Quaternion.identity);
+        Instantiate(_coinPrefab, transform.position, Quaternion.identity);
     }
-
+    
     private void Move()
     {
         var bagTransform = transform;

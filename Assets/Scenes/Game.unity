@@ -414,6 +414,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605787656}
   m_CullTransparentMesh: 0
+--- !u!1 &638191902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 638191904}
+  - component: {fileID: 638191903}
+  m_Layer: 0
+  m_Name: PoolController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &638191903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638191902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a2cea957b15344088c48949ba37fe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultCount: 10
+--- !u!4 &638191904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638191902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &890325067
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +636,92 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8e6b0d7b870fe34ab15af1f8fbd35d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moneyBagViewPrefab: {fileID: 1287887002}
+  _moneyBagSpeed: 10
+  _moneyBagSpawnCoinSpeed: 1
+  _coinPrefab: {fileID: 2693199263453306989, guid: 93bdcf2d06e72be4d819dbbee19b9f0a,
+    type: 3}
+--- !u!1001 &1287887001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 16328042047836411, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 16328042047836411, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16328042047836411, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 16328042047836411, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16328042047836411, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 16328042047836411, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16328042047836411, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16328042047836411, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16328042047836411, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16328042047836411, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 16328042047836411, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842425318327440445, guid: 36f9cc18211192d45aed47a6d98bdbec,
+        type: 3}
+      propertyPath: m_Name
+      value: MoneyBagViewPrefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 36f9cc18211192d45aed47a6d98bdbec, type: 3}
+--- !u!114 &1287887002 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1626828471, guid: 36f9cc18211192d45aed47a6d98bdbec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1287887001}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ca35a7f5cea0a4b9b6ca6ca826ad4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1417900914
@@ -783,75 +914,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1757883013
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 16328042047836411, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 16328042047836411, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16328042047836411, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 12.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 16328042047836411, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16328042047836411, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 16328042047836411, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16328042047836411, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16328042047836411, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16328042047836411, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16328042047836411, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16328042047836411, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1842425318327440445, guid: 1b50d301c1cc95f4983669228072d363,
-        type: 3}
-      propertyPath: m_Name
-      value: BagWithMoney
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b50d301c1cc95f4983669228072d363, type: 3}
 --- !u!1 &1823130588
 GameObject:
   m_ObjectHideFlags: 0

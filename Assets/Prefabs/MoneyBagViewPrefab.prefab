@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 16328042047836411}
   - component: {fileID: 2290059190712886602}
-  - component: {fileID: 3600455335258986880}
+  - component: {fileID: 1626828471}
   m_Layer: 8
-  m_Name: BagWithMoney
+  m_Name: MoneyBagViewPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3600455335258986880
+--- !u!114 &1626828471
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1842425318327440445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fcf43803493c7146b711537d5e168ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 13ca35a7f5cea0a4b9b6ca6ca826ad4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _coinPrefab: {fileID: 2964421992169573635, guid: 93bdcf2d06e72be4d819dbbee19b9f0a,
@@ -102,4 +102,3 @@ MonoBehaviour:
   _speed: 1
   _changeDistance: 10
   _chanceToChangeDirections: 0.01
-  _secondsBetweenAppleDrops: 1

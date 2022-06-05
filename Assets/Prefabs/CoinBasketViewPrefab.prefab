@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7325738066847343847}
   - component: {fileID: 1194961194570722720}
   - component: {fileID: 2747879230847958181}
-  - component: {fileID: 2311380225572033267}
+  - component: {fileID: 1011862792537181795}
   m_Layer: 10
-  m_Name: CoinPickerBasket
+  m_Name: CoinBasketViewPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,7 +115,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2311380225572033267
+--- !u!114 &1011862792537181795
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,7 +124,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6206505253341598762}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f394f6da8a6894428d58b538a92bc99, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f8de15a97ca4690b089c650c770b072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreGT: {fileID: 0}

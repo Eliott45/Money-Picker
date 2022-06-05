@@ -311,16 +311,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f6e91063a6b0cf46be26c8e7055e9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basketPrefab: {fileID: 6206505253341598762, guid: 7fab63efd5e09354d920df145ebd467e,
+  _basketPrefab: {fileID: 6206505253341598762, guid: 7fab63efd5e09354d920df145ebd467e,
     type: 3}
-  numBaskets: 3
-  basketBottomY: -14
-  basketSpacingY: 2
+  _numBaskets: 3
+  _basketBottomY: -14
+  _basketSpacingY: 2
   basketList: []
 --- !u!114 &534669907
 MonoBehaviour:
@@ -414,51 +414,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605787656}
   m_CullTransparentMesh: 0
---- !u!1 &638191902
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 638191904}
-  - component: {fileID: 638191903}
-  m_Layer: 0
-  m_Name: PoolController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &638191903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638191902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56a2cea957b15344088c48949ba37fe6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultCount: 10
---- !u!4 &638191904
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638191902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &890325067
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,6 +597,8 @@ MonoBehaviour:
   _moneyBagSpeed: 10
   _moneyBagSpawnCoinSpeed: 1
   _coinPrefab: {fileID: 2693199263453306989, guid: 93bdcf2d06e72be4d819dbbee19b9f0a,
+    type: 3}
+  _coinBasketsView: {fileID: 1011862792537181795, guid: 62317286e724b63438112261c36edd57,
     type: 3}
 --- !u!1001 &1287887001
 PrefabInstance:

@@ -84,6 +84,14 @@ namespace Pooling_System
             return obj;
         }
         
+        /// <summary>Get component from pool</summary>
+        public T CreateFromPool<T>(T prefab, Transform parent) where T : Component
+        {
+            var obj = CreateFromPoolInternal(prefab.gameObject, parent);
+            obj.transform.SetParent(parent, false);
+            return obj.GetComponent<T>();
+        }
+        
         private Pool GetOrCreatePool(GameObject prefab, int count)
         {
             if (prefabToPool.TryGetValue(prefab, out var pool))

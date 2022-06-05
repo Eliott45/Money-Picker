@@ -1,18 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Pooling_System;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public static float bottomY = -20f; // Предел падания монеты
+    [SerializeField] private float maxBottomYPosition = -20f;
 
-    void Update()
+    private void Update()
     {
-        if (transform.position.y < bottomY) { // Если монета достигнет -20f
-            Destroy(this.gameObject);
+        CheckPositionAdmissibility();
+    }
 
-            CoinPicker apScript = Camera.main.GetComponent<CoinPicker>(); // Получить ссылку на компонент 
-            apScript.CoinDestroyed(); // Вызвать метод
-        }    
+    private void CheckPositionAdmissibility()
+    {
+        if (!(transform.position.y < maxBottomYPosition)) return;
+        Pool.Return(gameObject);
+
+        CoinPicker apScript = Camera.main.GetComponent<CoinPicker>(); // Получить ссылку на компонент 
+        apScript.CoinDestroyed(); // Вызвать метод
     }
 }

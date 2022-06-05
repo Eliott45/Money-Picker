@@ -43,6 +43,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Controllers\MoneyBagController.cs" />
      <Compile Include="Assets\Scripts\Infrastructure\BootstrapInstaller.cs" />
+     <Compile Include="Assets\Scripts\Pooling System\PoolController.cs" />
      <Compile Include="Assets\Scripts\Views\MoneyBagView.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\CoinPicker.cs" />
@@ -52,7 +53,7 @@
      <Compile Include="Assets\Scripts\Basket.cs" />
      <Compile Include="Assets\Scripts\HighScore.cs" />
      <Compile Include="Assets\Scripts\Infrastructure\LocationInstaller.cs" />
-     <Compile Include="Assets\Scripts\Pooling System\PoolController.cs" />
+     <Compile Include="Assets\Scripts\Pooling System\Pool.cs" />
      <None Include="Assets\Resources\BillingMode.json" />
      <Reference Include="UnityEngine">
      <HintPath>N:\programms\ForProgramming\2020.1.0f1\2021.3.1f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

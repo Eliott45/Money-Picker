@@ -5,20 +5,19 @@ using UnityEngine.SceneManagement;
 public class CoinPicker : MonoBehaviour
 {
     [Header("Set in Inspector")]
-    public GameObject basketPrefab;
-    public int numBaskets = 3;
-    public float basketBottomY = -14f; // По Y местоположение 
-    public float basketSpacingY = 2f; // Дистанция между корзинками 
-    public List<GameObject> basketList;
+    [SerializeField] private GameObject _basketPrefab;
+    [SerializeField] private int _numBaskets = 3;
+    [SerializeField] private float _basketBottomY = -14f; // По Y местоположение 
+    [SerializeField] private float _basketSpacingY = 2f; // Дистанция между корзинками 
+    [SerializeField] private List<GameObject> basketList;
 
-    void Start() 
+    private void Start() 
     {
-        // Создание корзинок
         basketList = new List<GameObject>();
-        for (int i=0; i<numBaskets; i++) {
-            GameObject tBasketGO = Instantiate<GameObject>(basketPrefab);
-            Vector3 pos = Vector3.zero;
-            pos.y = basketBottomY + (basketSpacingY * i);
+        for (var i = 0; i < _numBaskets; i++) {
+            var tBasketGO = Instantiate(_basketPrefab);
+            var pos = Vector3.zero;
+            pos.y = _basketBottomY + _basketSpacingY * i;
             tBasketGO.transform.position = pos;
             basketList.Add(tBasketGO);
         }    
@@ -40,7 +39,4 @@ public class CoinPicker : MonoBehaviour
             SceneManager.LoadScene("Game");
         }
     }
-
-    
-
 }

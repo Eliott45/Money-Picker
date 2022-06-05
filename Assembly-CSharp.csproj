@@ -50,7 +50,7 @@
      <Compile Include="Assets\Scripts\Coin.cs" />
      <Compile Include="Assets\Scripts\Models\MoneyBagModel.cs" />
      <Compile Include="Assets\Scripts\MoneyBag.cs" />
-     <Compile Include="Assets\Scripts\Basket.cs" />
+     <Compile Include="Assets\Scripts\CoinBasket.cs" />
      <Compile Include="Assets\Scripts\HighScore.cs" />
      <Compile Include="Assets\Scripts\Infrastructure\LocationInstaller.cs" />
      <Compile Include="Assets\Scripts\Pooling System\Pool.cs" />

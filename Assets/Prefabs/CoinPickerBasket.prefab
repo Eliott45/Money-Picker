@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2747879230847958181}
   - component: {fileID: 2311380225572033267}
   m_Layer: 10
-  m_Name: MoneyPickerBasket
+  m_Name: CoinPickerBasket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,7 +1,7 @@
 ﻿using Pooling_System;
 using UnityEngine;
 
-public class Basket : MonoBehaviour
+public class CoinBasket : MonoBehaviour
 {
     private void Update()
     {

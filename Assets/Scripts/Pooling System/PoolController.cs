@@ -16,7 +16,7 @@ namespace Pooling_System
             public LinkedList<GameObject> NoUse = new LinkedList<GameObject>();
         }
         
-        public int DefaultCount = 20;
+        public int DefaultCount = 3;
         
         private Dictionary<GameObject, Pool> prefabToPool = new Dictionary<GameObject, Pool>();
         private Dictionary<GameObject, Pool> objectToPool = new Dictionary<GameObject, Pool>();

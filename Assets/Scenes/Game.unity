@@ -600,6 +600,9 @@ MonoBehaviour:
     type: 3}
   _coinBasketsView: {fileID: 1011862792537181795, guid: 62317286e724b63438112261c36edd57,
     type: 3}
+  _maxBaskets: 3
+  _basketBottomY: -14
+  _basketSpacingY: 2
 --- !u!1001 &1287887001
 PrefabInstance:
   m_ObjectHideFlags: 0

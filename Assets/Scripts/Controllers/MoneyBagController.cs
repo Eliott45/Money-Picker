@@ -51,14 +51,14 @@ namespace Controllers
 
         private void TransferDataModelToView()
         {
-            _view.ChangeSpeed(_model.GetSpeed());
+            _view.ChangeSpeed(_model.Speed);
         }
 
         private async void SpawnCoin()
         {
             while (true)
             {
-                await Task.Delay(_model.GetSpawnCoinSpeed());
+                await Task.Delay((int)(_model.SpawnCoinSpeed / 0.1 * 100));
                 Pool.Create(_coin.gameObject, _view.gameObject.transform.position);
             }
         }

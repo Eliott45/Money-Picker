@@ -6,22 +6,18 @@ namespace Models
     {
         public event EventHandler<float> OnSpeedChanged;
         
-        private float _speed;
-        private readonly float _spawnCoinSpeed;
+        public float Speed { get; private set; }
+        public float SpawnCoinSpeed { get; }
 
         public MoneyBagModel(float speed, float spawnCoinSpeed)
         {
-            _speed = speed;
-            _spawnCoinSpeed = spawnCoinSpeed;
+            Speed = speed;
+            SpawnCoinSpeed = spawnCoinSpeed;
         }
-
-        public float GetSpeed() => _speed;
         
-        public int GetSpawnCoinSpeed() => (int)(_spawnCoinSpeed / 0.1 * 100);
-
         public void IncreaseSpeed(float speed)
         {
-            _speed = speed;
+            Speed = speed;
             OnSpeedChanged?.Invoke(this, speed);
         }
     }
